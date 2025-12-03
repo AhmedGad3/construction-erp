@@ -4,9 +4,10 @@
   "type": "module",
   "homepage": "https://AhmedGad3.github.io/construction-erp",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+   "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
